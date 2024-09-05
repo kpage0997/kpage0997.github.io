@@ -1,3 +1,11 @@
+/*
+  Name: Kennedy Page
+  Date: 09.06.2024
+  CSC 372-01
+
+  This is the CSS file for styling the pie.html page.
+*/
+
 body {
     background-color: #FFFFFF; /* White background */
     color: #404040; /* Dark gray text color */
@@ -10,11 +18,12 @@ body {
 h1 {
     color: #A4A400; /* Yellow-green color */
     background-color: #F0F0F0; /* Light gray background */
-    font-family: 'Lucida Sans Unicode', sans-serif; /* Clean, sans-serif font */
+    font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif; /* Clean, sans-serif font */
     font-size: 22pt;
     text-align: center;
     padding: 10px;
     text-decoration: underline;
+    
 }
 
 .intro {
@@ -26,17 +35,25 @@ h1 {
 h2 {
     color: #A4A400; /* Matching heading color */
     background-color: #F0F0F0; /* Light gray background */
-    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
     font-size: 18pt;
     padding: 5px;
     text-decoration: underline;
     margin: 20px 0 10px 0;
 }
 
-ul, ol {
-    margin: 0 40px; /* Space to the sides */
+ol{
+    margin: 0 20px; /* Space to the sides */
     padding: 0 20px; /* Space inside the list */
     text-align: left; /* Align text to the left */
+}
+
+ul{
+    margin: 0 20px; /* Space to the sides */
+    padding: 0 20px; /* Space inside the list */
+    text-align: left; 
+    list-style-image: url('pie_icon.gif'); /* Uses the image as bullet points */
+    padding-left: 20px;
 }
 
 blockquote {
@@ -48,8 +65,10 @@ blockquote {
 
 pre {
     font-family: monospace; /* Monospaced font */
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
+    
+    
 }
 
 a {
