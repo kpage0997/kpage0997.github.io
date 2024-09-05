@@ -1,0 +1,58 @@
+body {
+    background-color: #FFFFFF; /* White background */
+    color: #404040; /* Dark gray text color */
+    font-family: Georgia, serif; /* Basic serif font */
+    font-size: 11pt;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    color: #A4A400; /* Yellow-green color */
+    background-color: #F0F0F0; /* Light gray background */
+    font-family: 'Lucida Sans Unicode', sans-serif; /* Clean, sans-serif font */
+    font-size: 22pt;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.intro {
+    
+    margin: 20px;
+}
+
+
+h2 {
+    color: #A4A400; /* Matching heading color */
+    background-color: #F0F0F0; /* Light gray background */
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 18pt;
+    padding: 5px;
+    text-decoration: underline;
+    margin: 20px 0 10px 0;
+}
+
+ul, ol {
+    margin: 0 40px; /* Space to the sides */
+    padding: 0 20px; /* Space inside the list */
+    text-align: left; /* Align text to the left */
+}
+
+blockquote {
+    background-color: #FFFFA8; /* Light yellow background */
+    border-left: 5px solid #A4A400; /* Left border color */
+    margin: 20px 40px;
+    font-style: italic;
+}
+
+pre {
+    font-family: monospace; /* Monospaced font */
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #A4A400; /* Link color matching headings */
+    text-decoration: none; /* No underline */
+}

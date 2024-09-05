@@ -1,0 +1,35 @@
+body {
+    font-family: 'Georgia', serif; /* Classic font to give a warm, traditional look */
+    background-color: #fff8dc; /* Light Cornsilk background to create a cozy feel */
+    color: #333;
+    margin: 20px;
+    text-align:center;
+}
+
+h1 {
+    color: #8b4513; /* Warm brown to reflect a homey, Southern style */
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px auto;
+    max-width: 600px; /* Keeps text neatly centered and easy to read */
+    line-height: 1.6; /* Improves readability */
+}
+
+.recipe-link {
+    border: 2px solid #d4a017; /* Mustard yellow border for a welcoming touch */
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px; /* Centers the content box */
+    background-color: #fff; /* White background to keep it clean and simple */
+    border-radius: 8px; /* Slightly rounded corners for a softer appearance */
+}
+
+h2 {
+    color: #8b4513; /* Same color as the main heading for consistency */
+}
+
+a {
+    color: #a0522d; /* A warm brown for links */
+}
