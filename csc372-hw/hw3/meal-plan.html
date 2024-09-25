@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+  Name: Kennedy Page
+  Date: 09.25.2024
+  CSC 372-01
+
+  Description: This is the meal-plan.html page for the SpartanEats website. It allows the
+  user to create their own meal plan.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="meal-plan.css" />
+    <title>Create Meal Plan</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>SpartanEats</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meal-plan.html" class="active">Meal Plan</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Create Your Meal Plan</h2>
+      <div class="meal-plan-container">
+        <div class="dish-list">
+          <h3>Recommended Dishes</h3>
+
+          <!-- List of Dishes -->
+          <div class="dish-item">
+            <p>Lemongrass Noodles - $10.95</p>
+            <button
+              class="add-to-plan"
+              data-name="Lemongrass Noodles"
+              data-price="10.95"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Crispy Spring Rolls - $5.95</p>
+            <button
+              class="add-to-plan"
+              data-name="Crispy Spring Rolls"
+              data-price="5.95"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Shrimp with Broccoli - $3.50</p>
+            <button
+              class="add-to-plan"
+              data-name="Thai Iced Tea"
+              data-price="3.50"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>California Roll - $6.50</p>
+            <button
+              class="add-to-plan"
+              data-name="California Roll"
+              data-price="6.50"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Chicken Teriyaki Bento - $12.95</p>
+            <button
+              class="add-to-plan"
+              data-name="Chicken Teriyaki Bento"
+              data-price="12.95"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Miso Soup - $2.50</p>
+            <button class="add-to-plan" data-name="Miso Soup" data-price="2.50">
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Pepperoni Pizza Slice - $3.00</p>
+            <button
+              class="add-to-plan"
+              data-name="Pepperoni Pizza Slice"
+              data-price="3.00"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Garlic Knots - $4.50</p>
+            <button
+              class="add-to-plan"
+              data-name="Garlic Knots"
+              data-price="4.50"
+            >
+              Add to Meal Plan
+            </button>
+          </div>
+          <div class="dish-item">
+            <p>Lasagna - $9.95</p>
+            <button class="add-to-plan" data-name="Lasagna" data-price="9.95">
+              Add to Meal Plan
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side: Meal Plan -->
+        <div class="meal-plan">
+          <h3>Your Meal Plan</h3>
+          <div id="meal-plan-items">
+            <!-- Selected dishes will appear here -->
+          </div>
+          <p class="total-cost">Total: $<span id="total-cost">0.00</span></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 SpartanEats. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="meal-plan.js"></script>
+  </body>
+</html>

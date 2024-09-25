@@ -1,0 +1,210 @@
+/*
+  Name: Kennedy Page
+  Date: 09.25.2024
+  CSC 372-01
+
+  Description: This stylesheet contains all the styles for the SpartanEats home page.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.restaurant {
+  margin-bottom: 60px;
+}
+
+.restaurant h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.restaurant-info img {
+  flex: 1 1 30%;
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.restaurant-info p {
+  flex: 1 1 70%;
+  font-size: 1em;
+  color: #555;
+}
+
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.dish {
+  position: relative;
+  width: calc(33.333% - 20px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .dish {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dish {
+    width: 100%;
+  }
+}
+
+.dish-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: max-width 0.3s ease;
+}
+
+.dish-image:hover,
+.dish-image.active-dish {
+  max-width: 225px;
+}
+
+.dish-description {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #2c3e50;
+  text-align: left;
+  width: 100%;
+}
+
+.dish-description.active {
+  display: block;
+}
+
+.dish-description h4 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.dish-description p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #555;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 20px 0;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.footer-content p {
+  color: #999;
+  font-size: 0.9em;
+  margin: 0;
+}

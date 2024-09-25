@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+  Name: Kennedy Page
+  Date: 09.25.24
+  CSC 372-01
+
+  Description: This is the index.html page for my SpartanEats website. It includes
+  information about featured restaurants and recommended dishes near the Petty Building.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>SpartanEats</title>
+</head>
+<body>
+   <!-- Header -->
+   <header>
+    <div class="container">
+        <h1>SpartanEats</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="meal-plan.html">Meal Plan</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>Discover the Best Eats on Campus</h2>
+            <p>Welcome to <strong>SpartanEats</strong>! As fellow Spartans, we know the importance of a great meal between classes. We've curated the best food spots within a half-mile of the Petty Building just for you. From mouthwatering international dishes to classic comfort foods, there's something for every palate. Join us as we explore the delicious flavors that make our campus truly special.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/rest.jpg" alt="Delicious food">
+        </div>
+    </div>
+</div>
+
+    <!-- Featured Restaurants Section -->
+    <section class="featured-restaurants">
+        <h2>Featured Restaurants</h2>
+
+        <!-- Restaurant 1: Boba House -->
+        <div class="restaurant">
+            <h3>Boba House</h3>
+            <p class="restaurant-description">332 Tate Street, Greensboro, NC <br>
+                Tuesday-Friday 11:30 am - 9:00 pm <br>
+                <br>Experience creative vegetarian and vegan dishes with Asian influences at Boba House, a local favorite for fresh and
+                flavorful meals. </p>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/noodles.jpg" alt="Lemongrass Noodles" class="dish-image" data-description="Rice noodles stir-fried with fresh vegetables in a fragrant lemongrass sauce. Price: $10.95">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/rolls.jpg" alt="Crispy Spring Rolls" class="dish-image" data-description="Golden fried rolls stuffed with veggies and served with sweet chili dipping sauce. Price: $5.95">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/shrimp.jpg" alt="Shrimp with Broccoli" class="dish-image" data-description="Shrimp and broccoli served with noodles and veggies. Price: $10.50">
+                    <div class="dish-description"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Restaurant 2: Don Japanese Restaurant -->
+        <div class="restaurant">
+            <h3>Don Japanese Restaurant</h3>
+            <p class="restaurant-description">423 Tate St, Greensboro, NC <br>
+                Monday-Saturday 11:00 am - 9:15 pm <br>
+                <br>Delight in traditional Japanese cuisine, offering a variety of sushi rolls, sashimi, and hot entrees in a cozy setting.</p>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/cali.jpg" alt="California Roll" class="dish-image" data-description="Classic sushi roll with crab stick, avocado, and cucumber. Price: $6.50">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/tery.jpg" alt="Chicken Teriyaki Bento" class="dish-image" data-description="Grilled chicken glazed with teriyaki sauce, served with rice, salad, and tempura. Price: $12.95">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/miso.jpg" alt="Miso Soup" class="dish-image" data-description="Traditional soybean paste soup with tofu and green onions. Price: $2.50">
+                    <div class="dish-description"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Restaurant 3: New York Pizza -->
+        <div class="restaurant">
+            <h3>New York Pizza</h3>
+            <p class="restaurant-description">337 Tate St, Greensboro, NC <br>
+                Sunday-Saturday 11:30 am - 2:00 am <br>
+                <br>Satisfy your pizza cravings with authentic New York-style slices and a variety of Italian favorites in a casual atmosphere.</p>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza Slice" class="dish-image" data-description="Generous slice of classic pepperoni pizza with melted mozzarella. Price: $3.00 per slice">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/garlic.jpg" alt="Garlic Knots" class="dish-image" data-description="Freshly baked knots brushed with garlic butter and herbs. Price: $4.50">
+                    <div class="dish-description"></div>
+                </div>
+                <div class="dish">
+                    <img src="images/lasagna.jpg" alt="Lasagna" class="dish-image" data-description="Layers of pasta with meat sauce, ricotta, and mozzarella cheese. Price: $9.95">
+                    <div class="dish-description"></div>
+                </div>
+            </div>
+    </section>
+
+       <!-- Dish Description Div -->
+       <div id="dish-description">
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 SpartanEats. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

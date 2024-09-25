@@ -1,0 +1,166 @@
+/*
+  Name: Kennedy Page
+  Date: 09.25.2024
+  CSC 372-01
+
+  Description: This stylesheet contains all the styles for the the meal plan page.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.meal-plan-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dish-list,
+.meal-plan {
+  width: 48%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.dish-list h3,
+.meal-plan h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.dish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dish-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.add-to-plan {
+  padding: 5px 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-to-plan:hover {
+  background-color: #1a252f;
+}
+
+.meal-plan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.meal-plan-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.meal-plan-item button {
+  padding: 5px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.meal-plan-item button:hover {
+  background-color: #1a252f;
+}
+
+.total-cost {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .meal-plan-container {
+    flex-direction: column;
+  }
+
+  .dish-list,
+  .meal-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 20px 0;
+}
+
+.footer-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.footer-content p {
+  color: #999;
+  font-size: 0.9em;
+  margin: 0;
+}
