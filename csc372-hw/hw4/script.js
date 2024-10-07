@@ -15,7 +15,7 @@ let losses = 0;
 let ties = 0;
 let shuffleInterval;
 let shuffleCount = 0;
-let canSelectChoice = true; // New flag to control choice selection
+let canSelectChoice = true; 
 
 // Elements
 const choices = document.querySelectorAll(".choice");
@@ -49,7 +49,7 @@ function resetSelections() {
   choices.forEach((choice) => {
     choice.classList.remove("selected");
   });
-  computerChoiceImg.src = "images/question-mark.png";
+  computerChoiceImg.src = "images/question-mark.PNG";
   computerChoiceImg.classList.remove("computer-selected");
   resultText.textContent = "Make your move!";
   shuffleCount = 0;
@@ -77,7 +77,7 @@ function startComputerShuffle() {
 
 // Shuffle Computer Choice Images
 function shuffleComputerChoice() {
-  const images = ["rock.png", "paper.png", "scissors.png"];
+  const images = ["rock.PNG", "paper.PNG", "scissors.PNG"];
   computerChoiceImg.src = `images/${images[shuffleCount % 3]}`;
   shuffleCount++;
 }
@@ -86,9 +86,7 @@ function shuffleComputerChoice() {
 function decideComputerChoice() {
   const options = ["rock", "paper", "scissors"];
   computerSelection = options[Math.floor(Math.random() * 3)];
-  computerChoiceImg.src = `images/${computerSelection}.png`;
-
-  // Add blue border to the computer's selected image
+  computerChoiceImg.src = `images/${computerSelection}.PNG`;
   computerChoiceImg.classList.add("computer-selected");
 }
 
@@ -109,8 +107,7 @@ function decideWinner() {
     losses++;
   }
   updateScore();
-  playAgainButton.style.display = "inline-block"; // Show the Play Again button
-  // Choices remain disabled until "Play Again" or "Reset Score" is clicked
+  playAgainButton.style.display = "inline-block"; 
 }
 
 // Update Score Display
@@ -120,12 +117,12 @@ function updateScore() {
   tiesText.textContent = ties;
 }
 
-// Play Again Button Functionality
+
 playAgainButton.addEventListener("click", () => {
   resetForNextRound();
 });
 
-// Function to Reset for Next Round
+//Reset for Next Round
 function resetForNextRound() {
   resetSelections();
   playAgainButton.style.display = "none";

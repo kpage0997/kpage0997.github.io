@@ -52,8 +52,8 @@ h2 {
 }
 
 .choice.disabled {
-  opacity: 0.5; /* Make the choices appear dimmed */
-  cursor: default; /* Change the cursor to default */
+  opacity: 0.5; 
+  cursor: default; 
 }
 
 #computer-choice {
