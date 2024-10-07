@@ -1,0 +1,81 @@
+/*
+    Author: Kennedy Page
+    Date: 10.08.2024
+    CSC 372-01
+
+    This CSS file provides styling for the Rock, Paper, Scissors game.
+
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 30px auto;
+  width: 60%;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.choice {
+  cursor: pointer;
+  width: 150px;
+  height: 200px;
+  border: 4px solid transparent;
+  margin: 0 10px;
+  transition: border 0.3s;
+}
+
+.choice.selected {
+  border: 4px solid red;
+}
+
+.choice.disabled {
+  opacity: 0.5; /* Make the choices appear dimmed */
+  cursor: default; /* Change the cursor to default */
+}
+
+#computer-choice {
+  width: 150px;
+  height: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#play-again-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
