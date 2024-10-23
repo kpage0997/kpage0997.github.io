@@ -17,6 +17,24 @@ document.getElementById("search-btn").addEventListener("click", function () {
   }
 });
 
+// Add event listener for the "Enter" key press
+document
+  .getElementById("username")
+  .addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      handleSearch(); // Call the search handler when "Enter" is pressed
+    }
+  });
+
+function handleSearch() {
+  const username = document.getElementById("username").value;
+  if (username) {
+    fetchRepos(username);
+  } else {
+    alert("Please enter a GitHub username");
+  }
+}
+
 async function fetchRepos(username) {
   const gallery = document.getElementById("gallery");
   gallery.innerHTML = "";
