@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Kennedy Page
+  Date: 10.23.2024
+  CSC 372-01
+
+  This is the index.html page for my GitHub repository gallery. It allows users to search for GitHub
+  repositories by username and display details such as name, description, commits, stars, and forks.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="title-container">
+      <h1>GitHub Repository Gallery</h1>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="username" placeholder="Enter GitHub username" />
+      <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+    </div>
+
+    <section id="gallery" class="gallery"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

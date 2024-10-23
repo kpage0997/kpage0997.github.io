@@ -1,0 +1,158 @@
+/*
+  Name: Kennedy Page
+  Date: 10.23.2024
+  CSC 372-01
+
+  This is the style.css file for the GitHub repository gallery page. It includes styles
+  for centering the search bar, formatting repository cards, and making the page responsive.
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* Title Container */
+.title-container {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.title-container h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 1em;
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 1.2em;
+  background-color: #39c1ee;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button i {
+  margin-right: 5px;
+}
+
+.search-container button:hover {
+  background-color: #10c1e4;
+  transform: scale(1.05);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Card Style for Repositories */
+.repo-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.repo-card h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.repo-card h3 a:hover {
+  text-decoration: underline;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.repo-card .repo-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.repo-card .repo-meta strong {
+  color: black;
+}
+
+.repo-card .icons {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #999;
+}
+
+.repo-card .icons i {
+  margin-right: 5px;
+}
+
+.repo-card .stats {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.repo-card .stats i {
+  margin-right: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .search-container input {
+    width: 200px;
+  }
+}
